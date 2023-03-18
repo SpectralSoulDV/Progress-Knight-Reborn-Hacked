@@ -2,13 +2,13 @@ var gameData = {
     taskData: {},
     itemData: {},
 
-    coins: 100000000000,
+    coins: 0,
     days: 365 * 14,
-    evil: 1000000000,
+    evil: 0,
     paused: false,
     timeWarpingEnabled: true,
 
-    rebirthOneCount: 10,
+    rebirthOneCount: 0,
     rebirthTwoCount: 0,
 
     currentJob: null,
