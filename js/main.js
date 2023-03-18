@@ -26,15 +26,15 @@ const autoLearnElement = document.getElementById("autoLearn")
 
 const updateSpeed = 20
 
-const baseLifespan = 365 * 700
+const baseLifespan = 365 * 70
 
 //Turn on devmode: 1
 //Turn off devmode: 0
 var devModeFastProgress = 0;
 // ******* DEV MODE SPEED INCREASES ******* //
 //original base game speed: 4
-var baseGameSpeed = 4;
-var baseEffect = 1.01;
+var baseGameSpeed = 40;
+var baseEffect = 1.05;
 if(devModeFastProgress == 1) {
     baseGameSpeed = 32;
     baseEffect = 100;
@@ -94,19 +94,19 @@ const skillBaseData = {
     //original effect: 10000.01
     //Fundamentals
     "Concentration": {name: "Concentration", maxXp: 100, effect: baseEffect, description: "Skill xp"},
-    "Productivity": {name: "Productivity", maxXp: 100, effect: 0.01, description: "Job xp"},
-    "Bargaining": {name: "Bargaining", maxXp: 100, effect: -0.01, description: "Expenses"},
+    "Productivity": {name: "Productivity", maxXp: 100, effect: 0.05, description: "Job xp"},
+    "Bargaining": {name: "Bargaining", maxXp: 100, effect: -0.05, description: "Expenses"},
     "Meditation": {name: "Meditation", maxXp: 100, effect: baseEffect, description: "Happiness"},
 
     //Combat
-    "Strength": {name: "Strength", maxXp: 100, effect: 0.01, description: "Military pay"},
-    "Battle tactics": {name: "Battle tactics", maxXp: 100, effect: 0.01, description: "Military xp"},
-    "Muscle memory": {name: "Muscle memory", maxXp: 100, effect: 0.01, description: "Strength xp"},
+    "Strength": {name: "Strength", maxXp: 100, effect: 0.1, description: "Military pay"},
+    "Battle tactics": {name: "Battle tactics", maxXp: 100, effect: 0.1, description: "Military xp"},
+    "Muscle memory": {name: "Muscle memory", maxXp: 100, effect: 0.1, description: "Strength xp"},
     
     //Magic
     "Mana control": {name: "Mana control", maxXp: 100, effect: baseEffect, description: "T.A.A. xp"},
     "Immortality": {name: "Immortality", maxXp: 100, effect: 0.01, description: "Longer lifespan"},
-    "Time warping": {name: "Time warping", maxXp: 100, effect: 0.01, description: "Gamespeed"},
+    "Time warping": {name: "Time warping", maxXp: 100, effect: 0.1, description: "Gamespeed"},
     "Super immortality": {name: "Super immortality", maxXp: 100, effect: 0.01, description: "Longer lifespan"},
 
     //Mind
@@ -120,10 +120,10 @@ const skillBaseData = {
 
 
     "Dark influence": {name: "Dark influence", maxXp: 100, effect: 0.01, description: "All xp"},
-    "Evil control": {name: "Evil control", maxXp: 100, effect: 0.01, description: "Evil gain"},
+    "Evil control": {name: "Evil control", maxXp: 100, effect: 1, description: "Evil gain"},
     "Intimidation": {name: "Intimidation", maxXp: 100, effect: -0.01, description: "Expenses"},
     "Demon training": {name: "Demon training", maxXp: 100, effect: 0.01, description: "All xp"},
-    "Blood meditation": {name: "Blood meditation", maxXp: 100, effect: 0.01, description: "Evil gain"},
+    "Blood meditation": {name: "Blood meditation", maxXp: 100, effect: 0.1, description: "Evil gain"},
     "Demon's wealth": {name: "Demon's wealth", maxXp: 100, effect: 0.002, description: "Job pay"},
 
     
