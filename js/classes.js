@@ -29,7 +29,7 @@ class Task {
     }
 
     getMaxLevelMultiplier() {
-        var maxLevelMultiplier = 1 + this.maxLevel / 10
+        var maxLevelMultiplier = 1 + this.maxLevel / 2
         return maxLevelMultiplier
     }
 
